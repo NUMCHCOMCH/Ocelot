@@ -8,12 +8,12 @@
 # =========================================================
 
 # --- 설정 변수 ---
-# Train 폴더 경로 (현재 스크립트가 실행되는 위치에 따라 조정)
-TRAIN_DIR="./Train"
+# 루트 디렉토리 경로 (현재 스크립트가 실행되는 위치에 따라 조정)
+TRAIN_DIR="."
 
-# Axolotl 설정 YAML 파일 이름 (Train 폴더 안에 있어야 함)
+# Axolotl 설정 YAML 파일 이름 (루트 디렉토리에 있어야 함)
 # 예: config.yaml, my_training_config.yaml 등
-CONFIG_FILE="solar.yaml" 
+CONFIG_FILE="solar.yml" 
 
 # Axolotl 실행 스크립트 경로 (일반적으로 'axolotl' 또는 'python -m axolotl.cli.train')
 # 시스템 환경에 따라 'axolotl' 명령어 바로 사용 가능하거나,
@@ -27,7 +27,7 @@ echo "========================================================="
 echo "Axolotl LLM 학습 시작"
 echo "========================================================="
 
-# 1. Train 폴더 존재 여부 확인
+# 1. 루트 디렉토리 존재 여부 확인
 if [ ! -d "$TRAIN_DIR" ]; then
     echo "오류: '${TRAIN_DIR}' 폴더를 찾을 수 없습니다."
     echo "스크립트가 실행되는 위치 또는 TRAIN_DIR 변수를 확인해주세요."
@@ -38,7 +38,7 @@ fi
 FULL_CONFIG_PATH="${TRAIN_DIR}/${CONFIG_FILE}"
 if [ ! -f "$FULL_CONFIG_PATH" ]; then
     echo "오류: 설정 파일 '${FULL_CONFIG_PATH}'을(를) 찾을 수 없습니다."
-    echo "CONFIG_FILE 변수를 확인하거나, Train 폴더에 해당 파일이 있는지 확인해주세요."
+    echo "CONFIG_FILE 변수를 확인하거나, 루트 디렉토리에 해당 파일이 있는지 확인해주세요."
     exit 1
 fi
 

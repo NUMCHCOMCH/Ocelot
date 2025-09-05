@@ -1,0 +1,21 @@
+[project]
+name = "jobtalks-ocelot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.10.1",
+    "datasets>=4.0.0",
+    "git-lfs>=1.6",
+    "huggingface>=0.0.1",
+    "numpy>=2.3.2",
+    "pandas>=2.3.2",
+    "sentencepiece>=0.2.1",
+    "torch>=2.8.0",
+    "torchaudio>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=4.56.1",
+    "trl>=0.22.2",
+    "wandb>=0.16.0",
+]

@@ -1,4 +1,0 @@
-git clone https://github.com/Beomi/ko-lm-evaluation-harness
-cd ko-lm-evaluation-harness
-pip install -r requirements.txt
-./run_all.sh 모델이름 'GPU번호들'

@@ -1,6 +1,6 @@
 # Ocelot : 한국어 자기소개서 첨삭 모델
 <p align="center" width="100%">
-<img src="assert/Ocelot.png" alt="NLP Logo" style="width: 50%;">
+<img src="assets/Ocelot.png" alt="NLP Logo" style="width: 50%;">
 </p>
 
 ## Update Logs

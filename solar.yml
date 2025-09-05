@@ -23,10 +23,10 @@ sample_packing: true
 eval_sample_packing: false
 pad_to_sequence_len: true
 
-wandb_project:
-wandb_entity:
+wandb_project: jobtalks-ocelot
+wandb_entity: jobtalks
 wandb_watch:
-wandb_name:
+wandb_name: jobtalks-ocelot
 wandb_log_model:
 
 
